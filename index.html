@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>Portfolio</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preload" as="font" href="fonts/Roboto-MediumItalic.ttf">
+    <link rel='stylesheet' href='desktop.css'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="menu">
+                <button type="button" class="collapsible"><img id="img" src="svg/collapse.svg" alt=""></button>
+
+                <div class="content">
+                    <a href="#skill">Skill bar</a>
+                    <a href="#about">About me</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#social">Find me</a>
+                </div>
+
+            </nav>
+        </header>
+        <main>
+            <div class="container-main-page">
+                <div class="block-emoji">
+                    <img src="svg/hi.svg" alt="">
+                </div>
+                <div class="block-text">
+                    <h1>I'm a Web Developer from Ukraine who change this world with powerful projects</h1>
+                    <img src="svg/power.svg" alt="">
+                </div>
+                <div class="block-photo">
+                    <img src="img/pic-mobile.png" alt="">
+                </div>
+                <!-- <div class="block-photo-desktop">
+                    <img src="img/pic.png" alt="">
+                </div> -->
+
+                <div class="block-background">
+                    <img src="svg/cog.svg" alt="">
+                </div>
+                <div class="block-background-circles">
+                    <svg width='380' height='600'>
+                        <circle cx="350" cy="160" r="150" stroke="none" stroke-width="10" fill="blue"/>
+                        <circle cx="350" cy="310" r="150" stroke="none" stroke-width="10" fill="yellow"/>
+                    </svg>
+                </div>
+            </div>
+
+
+            <div class="container-bar container-text">
+
+                <h2 id="skill">Skill bar</h2>
+                <p>HTML</p>
+                <div class="container">
+                    <div class="skills html">70%</div>
+                </div>
+
+                <p>CSS</p>
+                <div class="container">
+                    <div class="skills css">50%</div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="container">
+                    <div class="skills js">50%</div>
+                </div>
+
+                <p>Python</p>
+                <div class="container">
+                    <div class="skills python">75%</div>
+                </div>
+                <p>C++</p>
+                <div class="container">
+                    <div class="skills c">50%</div>
+                </div>
+                <p>C#</p>
+                <div class="container">
+                    <div class="skills cs">60%</div>
+                </div>
+            </div>
+            <div class="container-projects container-text">
+                <h2 id="projects">Projects</h2>
+                <div class="block-project prj1">
+                    <h3>Football project</h3>
+                    <div class="text">
+                        <p>
+                            This project about football matches. This is the first time I've used object-oriented style.
+                        </p>
+                    </div>
+                    <img src="img/cmd.jpeg" alt="">
+                    <button class="btn"><a href="https://github.com/Arsemon4ik/CourseWork" target="_blank">Link GitHub</a></button>
+                </div>
+                <hr>
+                <div class="block-project prj2">
+                    <h3>Telegram bot</h3>
+                    <div class="text">
+                        <p>
+                            My first telegram bot. I used Python.
+                        </p>
+                    </div>
+                    <img src="img/teleg.png" alt="">
+                    <button class="btn"><a href="https://github.com/Arsemon4ik/MyTelegramBot" target="_blank">Link GitHub</a></button>
+                </div>
+                <hr>
+                <div class="block-project prj3">
+                    <h3>Advertising site with backend</h3>
+                    <div class="text">
+                        <p>
+                            My first adv site with full structure: Backend, Frontend, SqLite3.
+                        </p>
+                    </div>
+                    <img src="img/site.png" alt="">
+                    <button class="btn"><a href="https://github.com/Arsemon4ik/jango_projects/tree/main/D16" target="_blank">Link GitHub</a></button>
+                </div>
+            </div>
+
+            <div class="container-about">
+                <div class="container-text">
+                    <h2 id="about">About</h2>
+                </div>
+                <div class="block-about-photo">
+                    <img src="img/photo-about.png" alt="">
+                </div>
+                <div class="block-about-text text">
+                    <p>
+                       My name is Arseniy. I am a student of the University of KPI. I'm a beginner programmer with great interest.I've been studying Premiere Pro and After Effects for 4 years. I also interested in Photoshop and Illustrator. Now I decided to deepen in IT. Now I'm studiyng as a FullStack Python Web developer.
+                    </p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <hr>
+            <div class="container-text">
+                <h2 id="social">Find me</h2>
+                <div class="container-flex">
+                    <a href="https://www.instagram.com/_arsemon4ik/" target="_blank"><img src="svg/inst.svg" alt=""></a>
+                    <a href="https://tttttt.me/arsemon4ik" target="_blank"><img src="svg/teleg.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>

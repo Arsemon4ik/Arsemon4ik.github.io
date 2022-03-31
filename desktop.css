@@ -1,0 +1,35 @@
+/* Desktop */
+
+@media screen and (min-width:1200px){
+    .wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .collapsible{
+        display: none;
+    }
+    .block-emoji{
+        display: none;
+    }
+    .block-text{
+        position: relative;
+        top: 100px;
+        left: 10px;
+    }
+    .block-photo img{
+        display: none;
+    }
+    .block-photo-desktop{
+        display: block;
+    }
+    .block-text img{
+        display: none;
+    }
+    .block-background-circles{
+        left:48%;
+        top: 5%;
+    }
+
+}
+
+
