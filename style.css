@@ -8,6 +8,9 @@
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+.menu-desktop{
+    display: none;
+}
 
 
 /* Header */
@@ -49,7 +52,7 @@
       margin: 8px;
       text-decoration: none;
       border: blue solid 3px;
-      width:130px;
+      width:155px;
       text-align: center;
       padding: 2px 5px;
       color: black;
@@ -70,7 +73,7 @@
 
 .container-main-page {
     display: flex;
-    /* margin: 0 15px 50px; */
+    align-items: center;
 }
 .block-emoji {
     width: min-content;
@@ -79,31 +82,30 @@
 .block-text {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     position: relative;
-    top: 50px;
-    left: -30px;
+    top: 20px;
     font-size: 13px;
+
 }
 .block-photo img{
-    width:min-content;
+    width: min-content;
     position: relative;
-    /* left: -20px; */
-    left: 5%;
+    left: 10%;
+
 }
 
 .block-photo-desktop{
     display: none;
 }
 
-.block-background{
-    position: absolute;
-    left: -20px;
-}
 
 .block-background-circles{
     position: absolute;
-    /* left:250px; */
+    right: 2%;
+    top: 77px;
     z-index: -1;
+    transition: all 0.4s ease-out;
 }
+
 
 /* Skill bar */
 
@@ -151,8 +153,12 @@
 }
 
 .block-project{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 20px 0 20px;
+    align-items: center;
+    border: 1px solid black;
+    margin: 30px 0 0;
 }
 
 .text{
@@ -164,14 +170,16 @@
 }
 
 .block-project h3{
-    /* font-size: 20px; */
-    font-style:normal;
+    font-size: 22px;
+    /* font-style:normal; */
     text-align: center;
     margin-bottom: 10px;
 }
 
 .block-project img{
-    width:100%;
+    width:80%;
+    margin: 0 0 10px;
+
 
 }
 
@@ -182,18 +190,54 @@
     font-weight: 600;
     text-align: center;
     color: black;
+    box-shadow: 8px 5px 5px black;
+}
+
+.block-project p{
+    margin: 10px;
 
 }
 
-
+.h{
+    font-size:30px;
+    border: 5px solid #1240AB;
+    text-align: center;
+    margin: 40px 0 0;
+    width: 100%;
+}
 
 .block-project button{
     padding: 10px;
 }
 
 
+.container-text a{
+    margin: 10px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    border: 2px solid #1531AE;
+    padding: 5px;
+    color: black;
+    width: 50%;
+    text-align: center;
+    /* background: rgb(241,236,0); */
+    box-shadow: 2px black;
+}
+.container-text a:hover{
+    background-color: #FFE240;
+    box-shadow: 8px 5px 5px gray;
+    transition: background-color 0.6s ease-out;
+    /* transition-property: background-color, box-shadow;
+    transition-duration: 0.6s, 0.1s;
+    transition-timing-function: ease-out, ease-in; */
+}
+
 
 /* About me */
+
+.container-about{
+    margin: 20px 2px;
+}
 
 .text{
    font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -205,6 +249,7 @@
 
 .block-about-text{
     border: 4px dotted #2196F3;
+    margin: 20px 0 0;
 }
 
 .block-about-text p{
@@ -216,19 +261,21 @@
 }
 
 .block-about-photo{
-    background-color: orange;
+    background-color: #FFA640;
     border-radius: 50%;
     text-align: center;
     overflow: hidden;
-    margin: 20px 0;
+    margin: 0 auto;
+    max-width: 390px;
+    /* max-height: 100%; */
 }
 .block-about-photo img{
-    width: 60%;
-    height: 50%;
+    max-width: 230px;
+    /* width: 60%; */
+    /* height: 50%; */
     object-fit: cover;
     position: relative;
     top: 10px;
-    /* margin: 0 auto; */
 }
 
 
@@ -242,6 +289,19 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+
+/* Orientation */
+
+@media screen and (orientation:landscape){
+
+    .block-photo img{
+        width: min-content;
+        position: relative;
+        left: 15%;
+
+    }
 }
 
 

@@ -1,7 +1,8 @@
 
 // Header collapse
 var coll = document.getElementsByClassName("collapsible");
-const img = document.querySelector('#img')
+const circles = document.querySelector('.block-background-circles')
+// const top = circles.style.top;
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -11,8 +12,10 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      circles.style.top = 77 + "px"
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
+      circles.style.top = 286 + "px"
     }
   });
 }
