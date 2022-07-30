@@ -392,7 +392,9 @@ h6 { font-size: 16px;}
 .input-field{
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom:10px; 
+	padding-bottom:10px;
+	padding-right: 0px;
+	padding-left: 0px;
 	background-color: var(--secondaryColor);
 	border-radius: 5px;
 	border:1px solid var(--borderColor);
@@ -446,7 +448,12 @@ h6 { font-size: 16px;}
 
 	}
 
+	#contact-form{
+
+	}
+
 }
+
 
 
 
