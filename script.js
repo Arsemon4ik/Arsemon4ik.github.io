@@ -1,21 +1,40 @@
+// console.log('Its working')
 
-// Header collapse
-var coll = document.getElementsByClassName("collapsible");
-const circles = document.querySelector('.block-background-circles')
-// const top = circles.style.top;
-var i;
+let theme = localStorage.getItem('theme')
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    // img.src = 'svg/cross.svg'
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-      circles.style.top = 77 + "px"
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-      circles.style.top = 286 + "px"
-    }
-  });
+if(theme == null){
+	setTheme('light')
+}else{
+	setTheme(theme)
+}
+
+let themeDots = document.getElementsByClassName('theme-dot')
+
+
+for (let i=0; themeDots.length > i; i++){
+	themeDots[i].addEventListener('click', function(){
+		let mode = this.dataset.mode
+		console.log('Option clicked:', mode)
+		setTheme(mode)
+	})
+}
+
+function setTheme(mode){
+	if(mode == 'light'){
+		document.getElementById('theme-style').href = 'default.css'
+	}
+
+	if(mode == 'blue'){
+		document.getElementById('theme-style').href = 'blue.css'
+	}
+
+	if(mode == 'green'){
+		document.getElementById('theme-style').href = 'green.css'
+	}
+
+	if(mode == 'purple'){
+		document.getElementById('theme-style').href = 'purple.css'
+	}
+
+	localStorage.setItem('theme', mode)
 }

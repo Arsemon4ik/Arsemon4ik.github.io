@@ -1,153 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
-    <title>Portfolio</title>
-    <link rel='stylesheet' href='style.css'>
-    <link rel="preload" as="font" href="fonts/Roboto-MediumItalic.ttf">
-    <link rel='stylesheet' href='desktop.css'>
+    <title>Arseniy Kostromin</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav class="menu">
-                <button type="button" class="collapsible"><img id="img" src="svg/collapse.svg" alt=""></button>
 
-                <div class="content">
-                    <a href="#skill">Skill bar</a>
-                    <a href="#about">About me</a>
-                    <a href="#projects">My Projects</a>
-                    <a href="#social">Find me</a>
-                </div>
+<section class="s1">
+    <div class="main-container">
+        <div class="greeting-wrapper">
+            <h1>Hi, I'm Arseniy Kostromin</h1>
+        </div>
 
-            </nav>
-            <nav class="menu-desktop">
-                <div class="links">
-                    <a href="#skill">Skill bar</a>
-                    <a href="#about">About me</a>
-                    <a href="#projects">My Projects</a>
-                    <a href="#social">Find me</a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="container-main-page">
-                <div class="block-text">
-                    <img src="svg/hi.svg" alt="">
-                    <h1>I'm a Web Developer from Ukraine who changes this world with powerful projects</h1>
-                    <img src="svg/power.svg" alt="">
-                </div>
-                <div class="block-photo">
-                    <img src="img/pic-mobile.png" alt="">
-                </div>
-                <div class="block-photo-desktop">
-                    <img src="img/pic.png" alt="">
-                </div>
-                <div class="block-background-circles">
-                    <img src="svg/circ5.svg" alt="">
-                </div>
+
+        <div class="intro-wrapper">
+            <div class="nav-wrapper">
+
+                <!-- Link around dots-wrapper added after tutorial video -->
+                <a href="index.html">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
+                </a>
+
+
+                <ul id="navigation">
+                    <li><a href="index.html#contact">Contact</a></li>
+
+                </ul>
             </div>
 
-            <h2 id="skill" class="h">Skill bar</h2>
-            <div class="container-bar container-text">
+            <div class="left-column">
+                <img id="profile_pic" src="images/arseniy.jpg">
+                <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
-                <div class="block1">
-                    <p>HTML</p>
-                    <div class="container">
-                        <div class="skills html">70%</div>
-                    </div>
-
-                    <p>CSS</p>
-                    <div class="container">
-                        <div class="skills css">50%</div>
-                    </div>
-
-                    <p>JavaScript</p>
-                    <div class="container">
-                        <div class="skills js">50%</div>
-                    </div>
+                <div id="theme-options-wrapper">
+                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                    <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                    <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                 </div>
-                <div class="block2">
-                    <p>Python</p>
-                    <div class="container">
-                        <div class="skills python">75%</div>
-                    </div>
-                    <p>C++</p>
-                    <div class="container">
-                        <div class="skills c">50%</div>
-                    </div>
-                    <p>C#</p>
-                    <div class="container">
-                        <div class="skills cs">60%</div>
+
+                <p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
+            </div>
+
+            <div class="right-column">
+
+                <div id="preview-shadow">
+                    <div id="preview">
+                        <div id="corner-tl" class="corner"></div>
+                        <div id="corner-tr" class="corner"></div>
+                        <h3>What I Do</h3>
+                        <p>I'm a student of KPI who learn web development</p>
+                        <div id="corner-br" class="corner"></div>
+                        <div id="corner-bl" class="corner"></div>
                     </div>
                 </div>
             </div>
-            <h2 id="projects" class="h">My Projects</h2>
-            <div class="container-projects container-text">
-
-                <div class="block-project prj1">
-                    <h3>Football project</h3>
-                    <div class="text">
-                        <p>
-                            This project is about football matches. This is the first time I've used object-oriented style.
-                        </p>
-                    </div>
-                    <img src="img/cmd.jpeg" alt="">
-                   <a href="https://github.com/Arsemon4ik/CourseWork" target="_blank" style="margin: 0 0 10px;">Link GitHub</a>
-                </div>
-                <!-- <hr> -->
-                <div class="block-project prj2">
-                    <h3>Telegram bot</h3>
-                    <div class="text">
-                        <p>
-                            My first telegram bot. I used Python.
-                        </p>
-                    </div>
-                    <img src="img/teleg.png" alt="">
-                    <a href="https://github.com/Arsemon4ik/MyTelegramBot" target="_blank"style="margin: 0 0 10px;">Link GitHub</a>
-                </div>
-                <!-- <hr> -->
-                <div class="block-project prj3">
-                    <h3>Advertising site with backend</h3>
-                    <div class="text">
-                        <p>
-                            My first adv site with full structure: Backend, Frontend, SqLite3.
-                        </p>
-                    </div>
-                    <img src="img/site.png" alt="">
-                   <a href="https://github.com/Arsemon4ik/jango_projects/tree/main/D16" target="_blank" style="margin: 0 0 10px;">Link GitHub</a>
-                </div>
-            </div>
-
-            <h2 id="about" class="h">About me</h2>
-            <div class="container-about">
-                <div class="block-about-photo">
-                    <img src="img/photo-about.png" alt="">
-                </div>
-                <div class="block-about-text text">
-                    <p>
-                       My name is Arseniy. I'm a student of the University of KPI. I'm a beginner programmer with great interest.I've been studying Premiere Pro and After Effects for 4 years. I'm also interested in Photoshop and Illustrator. I continue improving and deepening my knowledge in IT and the direction I study now is FullStack Python Web developer.
-                    </p>
-                </div>
-            </div>
-
-        </main>
-        <hr>
-        <footer>
-
-            <h2 id="social" class="h">Find me</h2>
-            <div class="container-text">
-
-                <div class="container-flex">
-                        <a href="https://www.instagram.com/_arsemon4ik/" target="_blank"><img src="svg/inst.svg" alt=""></a>
-                        <a href="https://tttttt.me/arsemon4ik"
-                        target="_blank"><img src="svg/teleg.svg" alt=""></a>
-                </div>
-            </div>
-        </footer>
+        </div>
     </div>
-    <script src='script.js'></script>
+</section>
+
+<section class="s2">
+    <div class="main-container">
+
+        <div class="about-wrapper">
+            <div class="about-me">
+                <h4>More about me</h4>
+
+                <p>My name is Arseniy. I'm a student of the University of KPI. I'm a beginner programmer with great interest.I've been studying Premiere Pro and After Effects for 4 years. I'm also interested in Photoshop and Illustrator.</p>
+
+                <p>I continue improving and deepening my knowledge in IT and the direction I study now is FullStack Python Web developer.</p>
+
+
+                <hr>
+
+                <h4>TOP EXPERTISE</h4>
+
+                <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="Arseniy_Kostromin.pdf">Download
+                    Resume</a></p>
+
+                <div id="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Postgres</li>
+                    </ul>
+
+                    <ul>
+                        <li>AWS (RDS/S3)</li>
+                        <li>Heroku</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="social-links">
+                <img id="social_img" src="images/pic.png">
+                <h3>Find me on Instagram & Telegram</h3>
+
+                <a target="_blank" href="https://www.instagram.com/_arsemon4ik/">Instagram: @_arsemon4ik</a>
+                <br>
+                <a target="_blank" href="https://tttttt.me/arsemon4ik">Telegram: @arsemon4ik</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="s1">
+    <div class="main-container">
+        <h3 style="text-align: center;">Some of my past projects</h3>
+
+        <div class="post-wrapper">
+
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="images/site.png">
+                    <div class="post-preview">
+                        <h6 class="post-title">Advertising site</h6>
+                        <p class="post-intro">My first advertising site with full structure: Backend, Frontend, SqLite3.</p>
+                        <a href="https://github.com/Arsemon4ik/jango_projects/tree/main/D16">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="images/dt.jpg">
+                    <div class="post-preview">
+                        <h6 class="post-title">Data Science project</h6>
+                        <p class="post-intro">Project of courses (Introduction to Data Science) Data Science project of Sport teams</p>
+                        <a href="https://coursera.org/share/05990f0621c54cf0f785f6ad41e3aea8">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="images/react.png">
+                    <div class="post-preview">
+                        <h6 class="post-title">React Weather site</h6>
+                        <p class="post-intro">Final project of courses (React development). React Weather site using Geolocation</p>
+                        <a href="https://github.com/Arsemon4ik/React-F1">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s2">
+    <div class="main-container">
+        <a href=""></a>
+        <h3 style="text-align: center;">Get In Touch</h3>
+
+        <form id="contact-form">
+            <a name="contact"></a>
+
+            <label>Name</label>
+            <input class="input-field" type="text" name="name">
+
+            <label>Subject</label>
+            <input class="input-field" type="text" name="subject">
+
+            <label>Email</label>
+            <input class="input-field" type="text" name="email">
+
+            <label>Message</label>
+            <textarea class="input-field" name="message"></textarea>
+
+            <input id="submit-btn" type="submit" value="Send">
+        </form>
+    </div>
+</section>
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
