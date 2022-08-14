@@ -38,3 +38,14 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+const body = ''
+const subject = ''
+const sendBtn = document.getElementById('submit-btn').addEventListener('click', ()=> sendMail(body, subject))
+
+
+function sendMail(body,subject){
+	body = document.getElementById('body-text')
+	subject = document.getElementById('subject')
+	window.open('mailto:arseniy.kostromin03@gmail.com?subject=' + encodeURIComponent(subject.value) + '&body=' + encodeURIComponent(body.value));
+}

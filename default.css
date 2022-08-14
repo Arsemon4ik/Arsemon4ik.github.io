@@ -337,6 +337,11 @@ input,button{
 	padding-bottom: 50px;
 }
 
+.links-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
 .post:hover {
   transform: scale(1.1);
 }
@@ -415,7 +420,14 @@ input,button{
 	padding-bottom:10px;
 	color: #fff;
 	background-color: var(--buttonColor);
+	opacity: 90%;
 	border:none;
+	cursor: pointer;
+}
+
+#submit-btn:hover{
+	opacity: 100%;
+
 }
 
 
